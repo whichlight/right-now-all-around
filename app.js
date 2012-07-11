@@ -95,7 +95,6 @@ $('#loading')
 	
        //setInterval(function(){
 	var pullMoreImages = function(){
-	console.log(refresh_url);
 	$.getJSON(search_url+refresh_url+'&callback=?',function(data){
 
 			refresh_url = data.refresh_url;
@@ -126,8 +125,8 @@ $('#loading')
 					};
 				i.src = src; //call image, if it exists, add obj	
 				
-			console.log(twimages.length);
 			});	
+			
 		});
 	
 	
